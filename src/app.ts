@@ -1,8 +1,9 @@
-import { Draggable, DragTarget } from './models/dnd.js';
-import { projectState } from './state/project-state.js';
-import { Project } from './models/project.js';
-import { Validatable, validate } from './util/validation.js';
-import autobind from './decorators/autobind.js';
+import { Draggable, DragTarget } from './models/dnd';
+import { projectState } from './state/project-state';
+import { Project } from './models/project';
+import { Validatable, validate } from './util/validation';
+import autobind from './decorators/autobind';
+import './app.css';
 
 // project type
 enum ProjectStatus {
@@ -76,13 +77,10 @@ class ProjectItem
     event.dataTransfer!.effectAllowed = 'move';
   }
 
-  dragEndHandler(_: DragEvent) {
-    console.log('drag end');
-  }
+  dragEndHandler(_: DragEvent) {}
 
   configure() {
     this.element.addEventListener('dragstart', this.dragStartHandler);
-    this.element.addEventListener('dragend', this.dragEndHandler);
   }
 
   renderContent() {
