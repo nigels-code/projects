@@ -12,5 +12,5 @@ npm install
 ```sh
 npm start
 ```
-Runs the application in development mode.\
-Open [http://localhost:3000](http://localhost:8080) to view it in a browser.
+This runs the application in development mode.\
+Open [http://localhost:8080](http://localhost:8080) to view it in a browser.
