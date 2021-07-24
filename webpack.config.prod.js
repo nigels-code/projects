@@ -6,12 +6,13 @@ module.exports = {
   entry: './src/app.ts',
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'build'),
+    publicPath: '/',
     clean: true
   },
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: './dist'
+    contentBase: './build'
   },
   module: {
     rules: [
@@ -32,7 +33,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       inject: 'body',
-      template: './src/index.html',
+      template: path.resolve('./index.html'),
       filename: 'index.html'
     })
   ]
