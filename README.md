@@ -4,8 +4,8 @@ I wrote this while following Maximilian Schwarzmuller's "Understanding Typescrip
 
 Technologies used: Typescript, HTML, CSS.
 
-I have set up a CI/CD pipeline between Github and Netlify.  
-Open <https://projectsxx.netlify.app/> to see this project in production.
+I have connected this repo to Netlify.  
+Open <https://projectsxx.netlify.app/> to see the project in production.
 
 ## Installation
 ```sh
