@@ -2,7 +2,7 @@
 
 I wrote this while following Maximilian Schwarzmuller's "Understanding Typescript" course.
 
-A Single Page Application developed with Typescript, HTML, CSS.
+A Single Page Application developed with TypeScript, HTML, CSS.
 
 I have connected this repo to Netlify.  
 Open <https://projectsxx.netlify.app/> to see the project in production.
